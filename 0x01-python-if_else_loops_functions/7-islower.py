@@ -1,54 +1,6 @@
 #!/usr/bin/python3
-
 def islower(c):
     if ord(c) > 97 and ord(c) < 126:
-        return(true)
+        return (True)
     else:
-        return(false)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                pwdpd
-                
+        return (False)
