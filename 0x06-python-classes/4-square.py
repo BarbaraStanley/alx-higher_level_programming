@@ -25,7 +25,7 @@ class Square:
 
     def size(self):
         '''retrieve private attribute size'''
-        return self.__size
+        return (self.__size)
 
     def size(self, value):
         '''property setter for size'''
@@ -38,5 +38,5 @@ class Square:
 
     def area(self):
         '''Returns the current square area'''
-        sq = self.__init * self.__init
+        sq = self.__size * self.__size
         return (sq)
