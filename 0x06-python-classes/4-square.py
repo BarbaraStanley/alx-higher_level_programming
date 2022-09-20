@@ -21,7 +21,7 @@ class Square:
             size(int): The size of the square
 
         '''
-        self.size = size
+        self.__size = size
 
     def size(self):
         '''retrieve private attribute size'''
@@ -33,7 +33,8 @@ class Square:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        else:
+            self.__size = value
 
     def area(self):
         '''Returns the current square area'''
