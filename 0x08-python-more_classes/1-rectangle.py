@@ -15,17 +15,24 @@
 
 
 class Rectangle:
-    '''Class that defines a rectangle'''
+    '''Class that defines a rectangle
+
+    Args:
+        width: int
+        height: int
+    '''
 
     def __init__(self, width=0, height=0):
         '''Initializes the class'''
         self.width = width
         self.height = height
 
+    @property
     def width(self):
         '''retrieves the private instance attribute: width'''
         return (self.__width)
 
+    @width.setter
     def width(self, value):
         '''property setter'''
         if type(value) is not int:
@@ -34,10 +41,12 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
+    @property
     def height(self):
         '''retrieves the private instance attribute: height'''
         return (self.__height)
 
+    @height.getter
     def height(self, value):
         '''property setter'''
         if type(value) is not int:
