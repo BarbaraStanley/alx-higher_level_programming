@@ -4,10 +4,6 @@
 
 
 def write_file(filename="", text=""):
-    if filename:
-        '''create file'''
-        pass
-    else:
-        with open(filename, mode="w", encoding="utf-8") as new:
-            new.write(text)
-            print("{} characters".format(len(filename)))
+    with open(filename, mode="x", encoding="utf-8") as new:
+        new.write(text)
+        print("{} characters".format(len(filename)))
