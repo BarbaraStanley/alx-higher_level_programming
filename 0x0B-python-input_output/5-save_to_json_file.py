@@ -15,4 +15,4 @@ def save_to_json_file(my_obj, filename):
     '''
     with open(filename, mode="w", encryption="utf-8") as json_file:
         conv = json.dumps(my_obj)
-        print(json_file.write(conv), end="")
+        json_file.write(conv)
