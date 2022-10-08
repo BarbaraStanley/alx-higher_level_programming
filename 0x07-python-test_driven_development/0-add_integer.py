@@ -7,12 +7,12 @@ def add_integer(a, b=98):
     Args:
     a:int
     b:int
-    add_integer(2, 3)
-    >>> 5
+    >>> add_integer(3,4)
+    7
     '''
-    if (type(a) is not int or type(a) is not float):
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    if (type(b) is not int or type(b) is not float):
+    if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
     else:
         sum = int(a) + int(b)
