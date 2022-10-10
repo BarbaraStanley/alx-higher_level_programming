@@ -1,0 +1,20 @@
+================================
+The ``5-text_indentation.py`` module
+=================================
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+    >>> text_indentation("Barbara. A girl? Prizmo: No. A boy")
+    Barbara.
+    
+    
+    A girl?
+    
+    
+    Prizmo:
+    
+    
+    No.
+    
+    
+    A boy
