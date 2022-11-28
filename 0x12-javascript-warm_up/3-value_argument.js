@@ -1,11 +1,8 @@
 #!/usr/bin/node
-
 const args = process.argv;
 
-args.forEach((value, index) => {
-  if (index < 2) {
-    console.log('No argument');
-  } else {
-    console.log(`${value}`);
-  }
-});
+if (args.length < 3) {
+  console.log('No argument');
+} else {
+  console.log(`${args[2]}`);
+}

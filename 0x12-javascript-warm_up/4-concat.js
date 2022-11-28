@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 const args = process.argv;
-args.forEach((value, index) => {
-	console.log(
+const sent = args[2] + ' ' + 'is' + ' ' + args[3];
+console.log(`${sent}`);
