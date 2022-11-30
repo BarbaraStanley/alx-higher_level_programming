@@ -7,18 +7,6 @@ class Rectangle {
     }
   }
 
-  get print () {
-    return this.print();
-  }
-
-  get rotate () {
-    return this.rotate();
-  }
-
-  get double () {
-    return this.double();
-  }
-
   print () {
     for (let i = 0; i < this.height; i++) {
       let square = '';

@@ -5,10 +5,6 @@ class Square extends y {
     super(size, size);
   }
 
-  get charPrint () {
-    return this.charPrint(c);
-  }
-
   charPrint (c) {
     for (let i = 0; i < this.height; i++) {
       let square = '';
