@@ -1,4 +1,5 @@
-#!/usr/bin/bash
-# a Bash script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
+#!/usr/bin/env bash
+# Takes in a URL, sends a request to a URL and displayes the
+# size of the body of the respose
 
-curl $1 | grep Content-Length
+curl -sI "$@" | grep 'Content-Length' | cut -d ' ' -f2
