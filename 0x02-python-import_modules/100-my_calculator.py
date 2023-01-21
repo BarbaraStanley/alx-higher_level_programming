@@ -6,7 +6,7 @@ from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
     operator = ['+', '-', '*', '/']
-    if len(sys.argv) < 3:
+    if len(sys.argv)-1 != 3:
         print('Usage: ./100-my_calculator.py <a> <operator> <b>')
         sys.exit(1)
 
@@ -19,10 +19,10 @@ if __name__ == "__main__":
         sys.exit(1)
 
     if op == operator[0]:
-        print('{} {} {} = {}'.format(a, op, b, add(a,b)))
+        print('{} {} {} = {}'.format(a, op, b, add(a, b)))
     if op == operator[1]:
-        print('{} {} {} = {}'.format(a, op, b, sub(a,b)))
+        print('{} {} {} = {}'.format(a, op, b, sub(a, b)))
     if op == operator[2]:
-        print('{} {} {} = {}'.format(a, op, b, mul(a,b)))
+        print('{} {} {} = {}'.format(a, op, b, mul(a, b)))
     if op == operator[3]:
-        print('{} {} {} = {}'.format(a, op, b, div(a,b)))
+        print('{} {} {} = {}'.format(a, op, b, div(a, b)))
